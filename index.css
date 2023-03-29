@@ -1,0 +1,61 @@
+body {
+    background: url(texture.png), #F2AC29;
+    background-size: 20%;
+    background-attachment: fixed;
+}
+
+#content {
+    margin-left: 18.75%;
+    margin-right: 18.75%;
+    background-color: #FFF9DB;
+    display: flex;
+    flex-direction: column;
+}
+
+#content>header {
+    flex-basis: 10%;
+    display: flex;
+    height: 10%;
+}
+
+#content>header>img {
+
+    flex-basis: 10%;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+
+}
+
+nav>* {
+    /* flex-basis: 10%; */
+}
+
+footer {
+    flex-basis: 10%;
+    background-color: #F2C438;
+    justify-content: center;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "1" "1" "1" "1i" ".",
+    "2i" "." "2" "2" "2" 
+    ;
+}
+main>a
+a {
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    text-decoration: none;
+    color: #F2C438;
+}
