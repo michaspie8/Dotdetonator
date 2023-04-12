@@ -25,7 +25,7 @@ body {
     display: flex;
 }
 
-#content>header>img {
+#content>header>a>img {
     height: 10vh;
     aspect-ratio: 1;
     box-sizing: border-box;
@@ -115,7 +115,8 @@ article{
     text-decoration: none;
 }
 a {
-    font-family: 'Indie Flower';
+    font-family: 'Indie Flower';    
+    src: url(IndieFlower.ttf);
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
