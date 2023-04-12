@@ -89,12 +89,16 @@ main>section {
     background: #8C884A;
     background-size: 100%;
     background-position-x: right;
+    
 }
-
+p{
+    font-family: "Indie Flower";    
+}
 main>section>article {
     margin: 5vw 5vh;
     display: flex;
     gap: 2vw 2vh
+    ;
 }
 
 #article-1 {
@@ -114,9 +118,13 @@ article{
     line-height: 35px;
     text-decoration: none;
 }
+@font-face {
+    font-family: 'Indie Flower'; 
+    src: url(
+        'IndieFlower.ttf') format("truetype");  
+}
 a {
-    font-family: 'Indie Flower';    
-    src: url(IndieFlower.ttf);
+    font-family: "Indie Flower";
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;

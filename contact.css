@@ -20,7 +20,11 @@ body {
     height: 10vh;
     justify-content: space-between;
 }
-
+@font-face {
+    font-family: 'Indie Flower'; 
+    src: url(
+        'IndieFlower.ttf') format("truetype");  
+}
 #content>header>div {
     display: flex;
 }

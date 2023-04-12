@@ -105,7 +105,11 @@ main>section>article {
     grid-template-columns: 1fr 2fr;
 
 }
-
+@font-face {
+    font-family: 'Indie Flower'; 
+    src: url(
+        'IndieFlower.ttf') format("truetype");  
+}
 article{
     color: #FFF9DB;
     font-family: 'Claudex';

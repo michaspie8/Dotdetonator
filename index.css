@@ -80,7 +80,11 @@ main>header>* {
     flex-basis: 50%;
     text-align: left;
 }
-
+@font-face {
+    font-family: 'Indie Flower'; 
+    src: url(
+        'IndieFlower.ttf') format("truetype");  
+}
 main>header>h1 {
     padding-left: 5vw;
 }
