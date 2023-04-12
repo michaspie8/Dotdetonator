@@ -67,7 +67,7 @@ main {
     flex-wrap: wrap;
 }
 
-main>section>h2 form{
+main>section>h2{
     background-color: #FFF9DB;
     height: 15vh;
     text-align: center;
@@ -80,6 +80,14 @@ main>header>* {
     flex-basis: 50%;
     text-align: left;
 }
+#content>main>header{
+    flex-basis: 100%;
+}
+#content>main>header>h2{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
 
 main>header>h1 {
     padding-left: 5vw;
@@ -89,6 +97,8 @@ main>section {
     background: #8C884A;
     background-size: 100%;
     background-position-x: right;
+    display: flex;
+    flex-direction: column;
 }
 
 main>section>article {
@@ -96,10 +106,7 @@ main>section>article {
     display: flex;
 
 }
-main>section{
-    display: flex;
-}
-article{
+article, form{
     color: #FFF9DB;
     font-family: 'Claudex';
     font-style: normal;
@@ -107,6 +114,12 @@ article{
     font-size: 1.2rem;
     line-height: 35px;
     text-decoration: none;
+    margin: 5%;
+    padding: 1%;
+}
+form{
+    border-radius: 20%;
+    background: #8C840F url(texture2.png);
 }
 a {
     font-family: 'Indie Flower';
