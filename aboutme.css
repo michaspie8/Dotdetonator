@@ -1,130 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Caudex&family=Lato&family=Mynerve&display=swap");
+
 body {
-    background: url(texture.png), #F2AC29;
-    background-size: 20vh;
-    background-attachment: fixed;
+    background: #F2AC29 url(texture.png) repeat fixed;
+    background-size: 15vmax;
+    font-family: "Caudex", serif;
+    color: #090A0F;
 }
 
-#content {
+body img {
+    height: 10vw;
+    width: 10vw;
+}
+
+body #content {
     margin-left: 18.75%;
     margin-right: 18.75%;
     background-color: #FFF9DB;
     display: flex;
     flex-direction: column;
-
-
 }
 
-#content>header {
+body #content header {
     flex-basis: 10%;
     display: flex;
     height: 10vh;
     justify-content: space-between;
 }
 
-#content>header>div {
+body #content header div {
     display: flex;
 }
 
-#content>header>a>img {
-    height: 10vh;
-    aspect-ratio: 1;
+body #content header div h2 {
+    text-align: center;
+    font-weight: lighter;
+}
+
+body #content header div a img {
+    height: 5rem;
+    width: 5rem;
     box-sizing: border-box;
 }
 
-#content>header>div>h2 {
-    text-align: center;
-}
-
-nav {
+body #content header nav {
     display: flex;
     flex-direction: row;
-    justify-self: flex-end;
-
-
-
     align-self: center;
     flex-basis: 40%;
     justify-content: center;
 }
 
-nav>a {
+body #content header nav a {
     text-decoration: none;
     color: #595734;
     text-align: center;
-
-    flex-basis: calc(100%/3);
+    line-height: 10vh;
+    flex-basis: 33.3333333333%;
+    height: 10vh;
 }
 
-footer {
+body #content header nav a:hover {
+    backdrop-filter: brightness(90%);
+    border-radius: 10%;
+}
+
+body #content footer {
     flex-basis: 10%;
     background-color: #F2C438;
     justify-content: center;
     text-align: center;
 }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-main>section>h2 {
-    background-color: #FFF9DB;
-    height: 15vh;
-    text-align: center;
-    align-self: center;
-    justify-self: center;
-    margin: 0;
-}
-
-main>header>* {
-    flex-basis: 50%;
-    text-align: left;
-}
-
-main>header>h1 {
-    padding-left: 5vw;
-}
-
-main>section {
-    background: #8C884A;
-    background-size: 100%;
-    background-position-x: right;
-    
-}
-p{
-    font-family: "Indie Flower";    
-}
-main>section>article {
-    margin: 5vw 5vh;
-    display: flex;
-    gap: 2vw 2vh
-    ;
-}
-
-#article-1 {
-    
-    display: grid;
-    grid-template-rows: 1fr 2fr;
-    grid-template-columns: 1fr 2fr;
-
-}
-
-article{
-    color: #FFF9DB;
-    font-family: 'Claudex';
+body #content footer p {
+    font-family: "Mynerve", cursive;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.2rem;
-    line-height: 35px;
-    text-decoration: none;
 }
-@font-face {
-    font-family: 'Indie Flower'; 
-    src: url(
-        'IndieFlower.ttf') format("truetype");  
+
+body #content p {
+    font-family: "Caudex", serif;
+    font-weight: normal;
 }
-a {
-    font-family: "Indie Flower";
+
+#content {
+    background-color: #8C884A;
+}
+
+#content main header {
+    display: flex;
+    justify-content: center;
+}
+
+#content main section {
+    display: flex;
+    flex-direction: column;
+    background-color: #8C884A;
+    color: white;
+}
+
+#content main section p {
+    font-family: "Mynerve", cursive;
+    font-size: 1.4rem;
+}
+
+#content main section article a {
+    font-family: "Mynerve", cursive;
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
@@ -132,49 +112,45 @@ a {
     text-decoration: none;
     color: #F2C438;
 }
-article>img{
-    width: 30%;}
-#article-1>img{
-    grid-row: 1/2;
-    grid-column: 1/-1;
+
+#content main section #article-1 {
+    padding: 5vh 5vw;
+    display: grid;
+    grid-template-columns: 15vw 1fr;
+    grid-template-rows: 5vw 10vw;
+    column-gap: 5vw;
 }
-#article-1>h3{
-    grid-row: 1/2;
+
+#content main section #article-1 h3 {
+    font-size: 100%;
     grid-column: -2/-1;
-    font-size: 2rem;
+    text-align: center;
+    font-family: "Caudex", serif;
+    font-weight: lighter;
 }
-#article-1>p{
+
+#content main section #article-1 p {
+    grid-column: -2/-1;
     grid-row: -2/-1;
-    grid-column: -2/-1;
-}
-#article-2{
-    flex-direction: column;
-}
-/* main>section>div {
-    display:flow-root;
-    position: absolute;
-    width: calc(0.625 * (100% - 16px));
-    height: calc(0.625 * (100% - 16px));
-    top: calc(27vh + 8px);
 }
 
-div>#circle {
-    float: right;
-    border-radius: 0 100% 0 0;
-    width: 50%;
-    height: 50%;
-    background-color: #595734;
-
+#content main section #article-1 div {
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    background-color: #F2AC29;
+    background-image: url("texture2.png");
+    background-size: 10vmax;
+    width: 15vw;
+    height: 15vw;
 }
 
-div>#square {
-    background-color: #595734;
-    width: 50%;
-    height: 50%;
+#content main section #article-1 div img {
+    width: 15vw;
+    height: 15vw;
 }
 
-#rectangle {
-    width: 100%;
-    height: 50%;
-    background-color: #595734;} */
+#content main section #article-2 {
+    padding: 5vh 5vw;
+}
 
+/*# sourceMappingURL=aboutme.css.map */
