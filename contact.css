@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Caudex&family=Lato&family=Mynerve&display=swap");
-
 body {
     background: #F2AC29 url(texture.png) repeat fixed;
     background-size: 15vmax;
@@ -7,12 +6,10 @@ body {
     color: #090A0F;
     font-size: 1vmax;
 }
-
 body img {
     height: 10vw;
     width: 10vw;
 }
-
 body #content {
     margin-left: 20vmin;
     margin-right: 20vmin;
@@ -20,29 +17,24 @@ body #content {
     display: flex;
     flex-direction: column;
 }
-
 body #content header {
     flex-basis: 10%;
     display: flex;
     height: 10vmin;
     justify-content: space-between;
 }
-
 body #content header div {
     display: flex;
 }
-
 body #content header div h2 {
     text-align: center;
     font-weight: lighter;
 }
-
 body #content header div a img {
     height: 10vmin;
     width: 10vmin;
     box-sizing: border-box;
 }
-
 body #content header nav {
     display: flex;
     flex-direction: row;
@@ -50,7 +42,6 @@ body #content header nav {
     flex-basis: 40%;
     justify-content: center;
 }
-
 body #content header nav a {
     text-decoration: none;
     color: #595734;
@@ -59,25 +50,21 @@ body #content header nav a {
     flex-basis: 33.3333333333%;
     height: 10vmin;
 }
-
 body #content header nav a:hover {
     backdrop-filter: brightness(90%);
     border-radius: 10%;
 }
-
 body #content footer {
     flex-basis: 10%;
     background-color: #F2C438;
     justify-content: center;
     text-align: center;
 }
-
 body #content footer p {
     font-family: "Mynerve", cursive;
     font-style: normal;
     font-weight: 400;
 }
-
 body #content p {
     font-family: "Caudex", serif;
     font-weight: normal;
@@ -86,23 +73,21 @@ body #content p {
 body #content main {
     background-color: #8C884A;
 }
-
 body #content main header {
     display: flex;
     justify-content: center;
     background-color: #FFF9DB;
     padding-bottom: 5vh;
 }
-
 body #content main section {
+    padding: 10vh 10vw;
+    gap: 10vh 10vw;
     color: #FFF9DB;
     display: flex;
     flex-direction: column;
 }
-
 body #content main section article {
     justify-content: center;
-    margin: 5vw 5vh;
     display: flex;
     flex-wrap: wrap;
     gap: 2% 2%;
@@ -118,19 +103,38 @@ body #content main section article img {
     order: -1;
 }
 
+body #content main section table, body #content main section td, body #content main section th {
+    border: dotted 0.1rem #F2AC29;
+}
+
+body #content main section table {
+    border-collapse: collapse;
+}
+
+body #content main section table tr:first-child th {
+    background-color: #595734;
+}
+
+body #content main section table th {
+    background-color: #8C884A;
+}
+
+body #content main section table td {
+    background-color: #8F9946;
+}
+
 body #content main section form {
     background-color: #595734;
     background-image: url("texture2.png");
-    margin: 5%;
     padding: 1%;
     display: flex;
     justify-content: space-around;
 }
 
 body #content main section form p {
+    font-family: "Mynerve", cursive;
     flex-basis: 50%;
 }
-
 body #content main section form div {
     flex-basis: 30%;
     display: flex;
@@ -139,12 +143,19 @@ body #content main section form div {
 }
 
 body #content main section form div input {
+    font-family: "Mynerve", cursive;
     background-color: #8C840F;
     border: 0.1rem solid #8F9946;
     color: #FFF9DB;
 }
 
+body #content main section form div label {
+    font-family: "Mynerve", cursive;
+}
+
 body #content main section form div button {
+    color: #FFF9DB;
+    font-family: "Mynerve", cursive;
     border-radius: 5%;
     border: 0.1rem solid #8F9946;
     padding: 1%;
