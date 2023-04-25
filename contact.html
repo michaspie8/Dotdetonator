@@ -3,51 +3,83 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="contact.css">
+    <meta content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.5, minimum-scale=0.5"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <!--    <link rel="stylesheet" href="contact.css">-->
+    <link href="sccs/contact.css" rel="stylesheet">
     <title>Dotnetonator</title>
 
 </head>
 
 <body>
-    <div id="content">
-        <header>
-            <a href="index.html"><img src="logo.png" alt="Dotnetonator logo"></a>
+<div id="content">
+    <header>
+        <div>
+            <a href="index.html"><img alt="Dotnetonator logo" src="logo.png"></a>
             <h2>Dotnetonator</h2>
-            <nav>
-                <a href="aboutme.html">O mnie</a>
-                <a href="projects.html">Projekty</a>
-                <a href="contact.html">Kontakt</a>
-            </nav>
+        </div>
+        <nav>
+            <a href="aboutme.html">O mnie</a>
+            <a href="projects.html">Projekty</a>
+            <a href="contact.html">Kontakt</a>
+        </nav>
+    </header>
+    <main>
+        <header>
+            <h2>Kontakt</h2>
         </header>
-        <main>
-            <header>
-                <h2>Kontakt</h2>
-            </header>
-            <section>
-                
-                <article>
-                    <img src="cs.png" alt="Image of C#">
-                    <p>Jeśli uczysz się programować i interesuje Cię programowanie w języku C# i technologii .NET, to
-                        zapraszam Cię do współpracy ze mną. Chętnie podzielę się swoim doświadczeniem i wiedzą z Tobą,
-                        pomogę Ci rozwiązać problemy programistyczne i wspólnie uczyć się nowych rzeczy</p>
-                </article>
-                <form>
+        <section>
 
-                    <p>Jeśli chcesz dowiedzieć się, kiedy zacznę pracować nad czymś nowym, wpisz tutaj swojego maila, a
-                        ja powiadomię cię, że możemy się zastanowić nad współpracą</p>
+            <article>
+                <img alt="Image of C#" src="cs.png">
+                <p>Jeśli uczysz się programować i interesuje Cię programowanie w języku C# i technologii .NET, to
+                    zapraszam Cię do współpracy ze mną. Chętnie podzielę się swoim doświadczeniem i wiedzą z Tobą,
+                    pomogę Ci rozwiązać problemy programistyczne i wspólnie uczyć się nowych rzeczy</p>
+
+            </article>
+            <table>
+                <tr>
+                    <th colspan="3">Akutalne Projekty</th>
+                </tr>
+                <tr>
+                    <th>Projekt, nad którym pracuję</th>
+                    <th>Liczba osób w projekcie</th>
+                    <th>Liczba potencjalnych dodatkowych programistów</th>
+                </tr>
+                <tr>
+                    <td>Strona Sklepu - server http w C#</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Bot Disord</td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Metroidvania w Unity</td>
+                    <td>3</td>
+                    <td>3</td>
+                </tr>
+            </table>
+            <form>
+
+                <p>Jeśli chcesz dowiedzieć się, kiedy zacznę pracować nad czymś nowym, albo czy nie dołączyć do
+                    współtworzenia projektu, wpisz tutaj swojego maila, a
+                    ja powiadomię cię, że możemy się zastanowić nad współpracą. </p>
+                <div>
                     <label for="contact-form-email">email</label>
-                    <input type="email" name="email" id="contact-form-email">
+                    <input id="contact-form-email" name="email" type="email">
                     <button type="submit">Wyślij</button>
-                </form>
-            </section>
-        </main>
-        <footer>
-            <p>2023 &copy; Michał Pietruszewski</p>
-        </footer>
-    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>2023 &copy; Michał Pietruszewski</p>
+    </footer>
+</div>
 </body>
 
 </html>

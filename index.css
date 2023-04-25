@@ -1,47 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Caudex&family=Lato&family=Mynerve&display=swap");
-
 body {
     background: #F2AC29 url(texture.png) repeat fixed;
     background-size: 15vmax;
     font-family: "Caudex", serif;
     color: #090A0F;
+    font-size: 1vmax;
 }
-
 body img {
     height: 10vw;
     width: 10vw;
 }
-
 body #content {
-    margin-left: 18.75%;
-    margin-right: 18.75%;
+    margin-left: 20vmin;
+    margin-right: 20vmin;
     background-color: #FFF9DB;
     display: flex;
     flex-direction: column;
 }
-
 body #content header {
     flex-basis: 10%;
     display: flex;
-    height: 10vh;
+    height: 10vmin;
     justify-content: space-between;
 }
-
 body #content header div {
     display: flex;
 }
-
 body #content header div h2 {
     text-align: center;
     font-weight: lighter;
 }
-
 body #content header div a img {
-    height: 5rem;
-    width: 5rem;
+    height: 10vmin;
+    width: 10vmin;
     box-sizing: border-box;
 }
-
 body #content header nav {
     display: flex;
     flex-direction: row;
@@ -49,34 +42,29 @@ body #content header nav {
     flex-basis: 40%;
     justify-content: center;
 }
-
 body #content header nav a {
     text-decoration: none;
     color: #595734;
     text-align: center;
-    line-height: 10vh;
+    line-height: 10vmin;
     flex-basis: 33.3333333333%;
-    height: 10vh;
+    height: 10vmin;
 }
-
 body #content header nav a:hover {
     backdrop-filter: brightness(90%);
     border-radius: 10%;
 }
-
 body #content footer {
     flex-basis: 10%;
     background-color: #F2C438;
     justify-content: center;
     text-align: center;
 }
-
 body #content footer p {
     font-family: "Mynerve", cursive;
     font-style: normal;
     font-weight: 400;
 }
-
 body #content p {
     font-family: "Caudex", serif;
     font-weight: normal;
@@ -86,7 +74,6 @@ body #content main {
     display: flex;
     flex-wrap: wrap;
 }
-
 body #content main header {
     padding: 1vw 1vh;
     display: flex;
@@ -96,16 +83,13 @@ body #content main header {
     height: 15vh;
     flex-basis: 100%;
 }
-
 body #content main header * {
     flex-basis: 50%;
     text-align: left;
 }
-
 body #content main header h1 {
     padding-left: 5vw;
 }
-
 body #content main section {
     image-rendering: smooth;
     background: #8C840F url("background green.png");
@@ -113,7 +97,6 @@ body #content main section {
     background-position-x: right;
     color: #FFF9DB;
 }
-
 body #content main section a {
     font-family: "Mynerve", cursive;
     font-style: normal;
@@ -123,30 +106,23 @@ body #content main section a {
     text-decoration: none;
     color: #F2C438;
 }
-
 body #content main section article {
     margin: 5vw 5vh;
     display: flex;
     gap: 1vw 2vh;
 }
-
 body #content main section #article-1 {
     padding-right: 10vw;
-    margin-top: 0;
+    margin-top: 0%;
     font-family: "Caudex", serif;
 }
-
 body #content main section #article-1 img {
     height: 15vw;
     width: 15vw;
 }
-
 body #content main section #article-2 {
     gap: 5vw 5vh;
 }
-
 body #content main section #article-2 img {
     order: -1;
 }
-
-/*# sourceMappingURL=index.css.map */
